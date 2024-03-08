@@ -1,24 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Windows.Forms;
+using BarcodePrint.Component;
 
 namespace BarcodePrint
 {
     public partial class Form1 : Form
     {
+        private SqlConnection conn;
+        private RdButton[] rdButtons; // Declare an array of RdButton
         public string InspectorName;
+
         public Form1()
         {
             InitializeComponent();
+            conn = new SqlConnection("Data Source=DESKTOP-7VDOR39\\SQLEXPRESS;Initial Catalog=LSBUDB;Integrated Security=True;TrustServerCertificate=True");
+            CreateButtons();
 
-            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -31,8 +30,6 @@ namespace BarcodePrint
 
         private void print_Click(object sender, EventArgs e)
         {
-           
-
             Form2 frm2 = new Form2();
             frm2.Serial = textBoxSerial.Text;
             frm2.Model = textBoxModel.Text;
@@ -41,7 +38,7 @@ namespace BarcodePrint
             frm2.ShowDialog();
         }
 
-        public Form1 (string inspectorname) : this () 
+        public Form1(string inspectorname) : this()
         {
             this.InspectorName = inspectorname;
             textBoxInspec.Text = InspectorName;
@@ -77,13 +74,6 @@ namespace BarcodePrint
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            dateTimePicker1.Format = DateTimePickerFormat.Time;
-            dateTimePicker1.ShowUpDown = true;
-
-        }
-
         private void textBoxSerial_TextChanged(object sender, EventArgs e)
         {
 
@@ -102,6 +92,92 @@ namespace BarcodePrint
         private void rdButton17_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CreateButtons()
+        {
+            try
+            {
+                using (conn)
+                {
+                    conn.Open();
+
+                    // Fetch Defect Names from the database
+                    string query = "SELECT id, PartId, DefectName FROM Defect_Names";
+
+                    using (SqlCommand command = new SqlCommand(query, conn))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                // Assuming you have a column named "DefectName" in the result
+                                string defectName = reader["DefectName"].ToString();
+
+                                // Create a new instance of RdButton (replace with your actual class)
+                                RdButton rdButton = new RdButton();
+
+                                // Set button properties
+                                rdButton.Height = 56;
+                                rdButton.Width = 219;
+                                rdButton.BackColor = Color.White;
+                                rdButton.ForeColor = Color.Black;
+                                rdButton.BorderColor = Color.Black;
+                                rdButton.BorderSize = 1;
+                                rdButton.Text = defectName;
+                                rdButton.Name = $"RdButton_{defectName}";
+                                rdButton.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
+
+                                // To center the text both horizontally and vertically within the button
+                                rdButton.TextAlign = ContentAlignment.MiddleCenter;
+
+                                // If you're facing issues with text not being centered properly, especially with special characters or different font styles,
+                                // you might also consider setting the UseCompatibleTextRendering property to true for the button. This can help with the rendering of text.
+                                rdButton.UseCompatibleTextRendering = true;
+
+                                // Add a Button Click Event handler
+                                rdButton.Click += new EventHandler(Button_Click);
+
+                                // Add the button to the FlowLayoutPanel
+                                flowLayoutPanel1.Controls.Add(rdButton); // assuming flowLayoutPanel1 is the name of your FlowLayoutPanel
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            // Handle button click event
+            //RdButton clickedButton = (RdButton)sender;
+            //MessageBox.Show($"Dynamic button {clickedButton.Name} is clicked");
+
+            Form formBackground = new Form();
+            try 
+            {
+                using (popUp uu = new popUp())
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = 70d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
+
+                    uu.Owner = formBackground;
+                    uu.ShowDialog();
+                }
+            } 
+            catch (Exception )
+            {}
         }
     }
 }

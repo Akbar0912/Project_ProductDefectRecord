@@ -17,7 +17,7 @@ namespace BarcodePrint
         public Login()
         {
             InitializeComponent();
-            conn = new SqlConnection("Data Source=LAPTOP-A0O7AHQS\\SQLEXPRESS;Initial Catalog=LSBUDB;Integrated Security=True;TrustServerCertificate=True");
+            conn = new SqlConnection("Data Source=DESKTOP-7VDOR39\\SQLEXPRESS;Initial Catalog=LSBUDB;Integrated Security=True;TrustServerCertificate=True");
         }
 
         private void button1_Click(object sender, EventArgs e)
