@@ -76,8 +76,9 @@
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 12;
             // 
             // tableLayoutPanel1
@@ -102,15 +103,14 @@
             this.tableLayoutPanel1.Controls.Add(this.rdButton28, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.rdButton26, 5, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 185);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 120);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(8, 8, 8, 15);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 257);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(533, 167);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
             // rdButton18
@@ -126,9 +126,10 @@
             this.rdButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton18.ForeColor = System.Drawing.Color.White;
-            this.rdButton18.Location = new System.Drawing.Point(11, 128);
+            this.rdButton18.Location = new System.Drawing.Point(7, 83);
+            this.rdButton18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton18.Name = "rdButton18";
-            this.rdButton18.Size = new System.Drawing.Size(124, 111);
+            this.rdButton18.Size = new System.Drawing.Size(83, 72);
             this.rdButton18.TabIndex = 42;
             this.rdButton18.Text = "Motor Wash";
             this.rdButton18.TextColor = System.Drawing.Color.White;
@@ -147,9 +148,10 @@
             this.rdButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton17.ForeColor = System.Drawing.Color.White;
-            this.rdButton17.Location = new System.Drawing.Point(11, 11);
+            this.rdButton17.Location = new System.Drawing.Point(7, 7);
+            this.rdButton17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton17.Name = "rdButton17";
-            this.rdButton17.Size = new System.Drawing.Size(124, 111);
+            this.rdButton17.Size = new System.Drawing.Size(83, 72);
             this.rdButton17.TabIndex = 36;
             this.rdButton17.Text = "Top Defect";
             this.rdButton17.TextColor = System.Drawing.Color.White;
@@ -168,9 +170,10 @@
             this.rdButton19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton19.ForeColor = System.Drawing.Color.White;
-            this.rdButton19.Location = new System.Drawing.Point(141, 11);
+            this.rdButton19.Location = new System.Drawing.Point(94, 7);
+            this.rdButton19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton19.Name = "rdButton19";
-            this.rdButton19.Size = new System.Drawing.Size(124, 111);
+            this.rdButton19.Size = new System.Drawing.Size(83, 72);
             this.rdButton19.TabIndex = 43;
             this.rdButton19.Text = "Tub A";
             this.rdButton19.TextColor = System.Drawing.Color.White;
@@ -189,9 +192,10 @@
             this.rdButton20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton20.ForeColor = System.Drawing.Color.White;
-            this.rdButton20.Location = new System.Drawing.Point(141, 128);
+            this.rdButton20.Location = new System.Drawing.Point(94, 83);
+            this.rdButton20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton20.Name = "rdButton20";
-            this.rdButton20.Size = new System.Drawing.Size(124, 111);
+            this.rdButton20.Size = new System.Drawing.Size(83, 72);
             this.rdButton20.TabIndex = 44;
             this.rdButton20.Text = "Motor Spin";
             this.rdButton20.TextColor = System.Drawing.Color.White;
@@ -210,9 +214,10 @@
             this.BaseAButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BaseAButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BaseAButton.ForeColor = System.Drawing.Color.White;
-            this.BaseAButton.Location = new System.Drawing.Point(271, 11);
+            this.BaseAButton.Location = new System.Drawing.Point(181, 7);
+            this.BaseAButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BaseAButton.Name = "BaseAButton";
-            this.BaseAButton.Size = new System.Drawing.Size(124, 111);
+            this.BaseAButton.Size = new System.Drawing.Size(83, 72);
             this.BaseAButton.TabIndex = 45;
             this.BaseAButton.Text = "Base A";
             this.BaseAButton.TextColor = System.Drawing.Color.White;
@@ -232,9 +237,10 @@
             this.rdButton21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton21.ForeColor = System.Drawing.Color.White;
-            this.rdButton21.Location = new System.Drawing.Point(271, 128);
+            this.rdButton21.Location = new System.Drawing.Point(181, 83);
+            this.rdButton21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton21.Name = "rdButton21";
-            this.rdButton21.Size = new System.Drawing.Size(124, 111);
+            this.rdButton21.Size = new System.Drawing.Size(83, 72);
             this.rdButton21.TabIndex = 46;
             this.rdButton21.Text = "Panel";
             this.rdButton21.TextColor = System.Drawing.Color.White;
@@ -253,9 +259,10 @@
             this.rdButton23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton23.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton23.ForeColor = System.Drawing.Color.White;
-            this.rdButton23.Location = new System.Drawing.Point(401, 11);
+            this.rdButton23.Location = new System.Drawing.Point(268, 7);
+            this.rdButton23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton23.Name = "rdButton23";
-            this.rdButton23.Size = new System.Drawing.Size(124, 111);
+            this.rdButton23.Size = new System.Drawing.Size(83, 72);
             this.rdButton23.TabIndex = 47;
             this.rdButton23.Text = "SF Switch";
             this.rdButton23.TextColor = System.Drawing.Color.White;
@@ -274,9 +281,10 @@
             this.rdButton25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton25.ForeColor = System.Drawing.Color.White;
-            this.rdButton25.Location = new System.Drawing.Point(531, 128);
+            this.rdButton25.Location = new System.Drawing.Point(355, 83);
+            this.rdButton25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton25.Name = "rdButton25";
-            this.rdButton25.Size = new System.Drawing.Size(124, 111);
+            this.rdButton25.Size = new System.Drawing.Size(83, 72);
             this.rdButton25.TabIndex = 48;
             this.rdButton25.Text = "Lid";
             this.rdButton25.TextColor = System.Drawing.Color.White;
@@ -295,9 +303,10 @@
             this.rdButton24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton24.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton24.ForeColor = System.Drawing.Color.White;
-            this.rdButton24.Location = new System.Drawing.Point(401, 128);
+            this.rdButton24.Location = new System.Drawing.Point(268, 83);
+            this.rdButton24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton24.Name = "rdButton24";
-            this.rdButton24.Size = new System.Drawing.Size(124, 111);
+            this.rdButton24.Size = new System.Drawing.Size(83, 72);
             this.rdButton24.TabIndex = 49;
             this.rdButton24.Text = "Body B";
             this.rdButton24.TextColor = System.Drawing.Color.White;
@@ -316,9 +325,10 @@
             this.rdButton27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton27.ForeColor = System.Drawing.Color.White;
-            this.rdButton27.Location = new System.Drawing.Point(531, 11);
+            this.rdButton27.Location = new System.Drawing.Point(355, 7);
+            this.rdButton27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton27.Name = "rdButton27";
-            this.rdButton27.Size = new System.Drawing.Size(124, 111);
+            this.rdButton27.Size = new System.Drawing.Size(83, 72);
             this.rdButton27.TabIndex = 51;
             this.rdButton27.Text = "Pulsator";
             this.rdButton27.TextColor = System.Drawing.Color.White;
@@ -337,9 +347,10 @@
             this.rdButton28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton28.ForeColor = System.Drawing.Color.White;
-            this.rdButton28.Location = new System.Drawing.Point(661, 11);
+            this.rdButton28.Location = new System.Drawing.Point(442, 7);
+            this.rdButton28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton28.Name = "rdButton28";
-            this.rdButton28.Size = new System.Drawing.Size(128, 111);
+            this.rdButton28.Size = new System.Drawing.Size(84, 72);
             this.rdButton28.TabIndex = 50;
             this.rdButton28.Text = "Pulsator";
             this.rdButton28.TextColor = System.Drawing.Color.White;
@@ -358,9 +369,10 @@
             this.rdButton26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton26.ForeColor = System.Drawing.Color.White;
-            this.rdButton26.Location = new System.Drawing.Point(661, 128);
+            this.rdButton26.Location = new System.Drawing.Point(442, 83);
+            this.rdButton26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton26.Name = "rdButton26";
-            this.rdButton26.Size = new System.Drawing.Size(128, 111);
+            this.rdButton26.Size = new System.Drawing.Size(84, 72);
             this.rdButton26.TabIndex = 52;
             this.rdButton26.Text = "DLL";
             this.rdButton26.TextColor = System.Drawing.Color.White;
@@ -373,11 +385,10 @@
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.rdButton14);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 442);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 287);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 273);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(533, 178);
             this.flowLayoutPanel1.TabIndex = 17;
             // 
             // rdButton14
@@ -391,10 +402,9 @@
             this.rdButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton14.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.rdButton14.Location = new System.Drawing.Point(12, 13);
-            this.rdButton14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdButton14.Location = new System.Drawing.Point(8, 8);
             this.rdButton14.Name = "rdButton14";
-            this.rdButton14.Size = new System.Drawing.Size(328, 86);
+            this.rdButton14.Size = new System.Drawing.Size(219, 56);
             this.rdButton14.TabIndex = 9;
             this.rdButton14.Text = "rdButton14";
             this.rdButton14.TextColor = System.Drawing.Color.MediumSlateBlue;
@@ -406,10 +416,9 @@
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(4, 5);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(179, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(118, 20);
             this.dateTimePicker1.TabIndex = 21;
             // 
             // tableLayoutPanel2
@@ -426,15 +435,14 @@
             this.tableLayoutPanel2.Controls.Add(this.textBoxModel, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxSerial, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(7, 8);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(5, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(374, 169);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(248, 110);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label4
@@ -443,9 +451,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 42);
+            this.label4.Location = new System.Drawing.Point(2, 27);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 20);
+            this.label4.Size = new System.Drawing.Size(120, 13);
             this.label4.TabIndex = 13;
             this.label4.Text = "Model Number";
             // 
@@ -455,9 +464,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 84);
+            this.label2.Location = new System.Drawing.Point(2, 54);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 20);
+            this.label2.Size = new System.Drawing.Size(120, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "Model Code";
             // 
@@ -467,9 +477,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 126);
+            this.label5.Location = new System.Drawing.Point(2, 81);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 20);
+            this.label5.Size = new System.Drawing.Size(120, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Inspector";
             // 
@@ -479,10 +490,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxInspec.HideSelection = false;
             this.textBoxInspec.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBoxInspec.Location = new System.Drawing.Point(190, 129);
+            this.textBoxInspec.Location = new System.Drawing.Point(126, 83);
+            this.textBoxInspec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxInspec.Name = "textBoxInspec";
             this.textBoxInspec.ReadOnly = true;
-            this.textBoxInspec.Size = new System.Drawing.Size(181, 26);
+            this.textBoxInspec.Size = new System.Drawing.Size(120, 20);
             this.textBoxInspec.TabIndex = 8;
             this.textBoxInspec.WordWrap = false;
             this.textBoxInspec.TextChanged += new System.EventHandler(this.textBoxInpec_TextChanged);
@@ -491,9 +503,10 @@
             // 
             this.textBoxDefect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxDefect.Location = new System.Drawing.Point(190, 87);
+            this.textBoxDefect.Location = new System.Drawing.Point(126, 56);
+            this.textBoxDefect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDefect.Name = "textBoxDefect";
-            this.textBoxDefect.Size = new System.Drawing.Size(181, 26);
+            this.textBoxDefect.Size = new System.Drawing.Size(120, 20);
             this.textBoxDefect.TabIndex = 6;
             this.textBoxDefect.TextChanged += new System.EventHandler(this.textBoxDefect_TextChanged);
             // 
@@ -503,9 +516,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(2, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 20);
+            this.label3.Size = new System.Drawing.Size(120, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Serial Number";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -514,9 +528,10 @@
             // 
             this.textBoxModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxModel.Location = new System.Drawing.Point(190, 45);
+            this.textBoxModel.Location = new System.Drawing.Point(126, 29);
+            this.textBoxModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxModel.Name = "textBoxModel";
-            this.textBoxModel.Size = new System.Drawing.Size(181, 26);
+            this.textBoxModel.Size = new System.Drawing.Size(120, 20);
             this.textBoxModel.TabIndex = 4;
             this.textBoxModel.TextChanged += new System.EventHandler(this.textBoxSerial_TextChanged_1);
             // 
@@ -524,9 +539,10 @@
             // 
             this.textBoxSerial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSerial.Location = new System.Drawing.Point(190, 3);
+            this.textBoxSerial.Location = new System.Drawing.Point(126, 2);
+            this.textBoxSerial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxSerial.Name = "textBoxSerial";
-            this.textBoxSerial.Size = new System.Drawing.Size(181, 26);
+            this.textBoxSerial.Size = new System.Drawing.Size(120, 20);
             this.textBoxSerial.TabIndex = 4;
             this.textBoxSerial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSerial_KeyPress);
             // 
@@ -535,26 +551,26 @@
             this.panel1.Controls.Add(this.tableLayoutPanel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 185);
+            this.panel1.Size = new System.Drawing.Size(533, 120);
             this.panel1.TabIndex = 15;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel3, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(3);
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(800, 185);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(533, 120);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel3
@@ -562,10 +578,9 @@
             this.panel3.Controls.Add(this.tableLayoutPanel5);
             this.panel3.Controls.Add(this.tableLayoutPanel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(419, 8);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(279, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(374, 169);
+            this.panel3.Size = new System.Drawing.Size(249, 110);
             this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel5
@@ -576,13 +591,13 @@
             this.tableLayoutPanel5.Controls.Add(this.rdButton4, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.rdButton3, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 68);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 44);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(374, 101);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(249, 66);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // rdButton4
@@ -598,9 +613,10 @@
             this.rdButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton4.ForeColor = System.Drawing.Color.Black;
-            this.rdButton4.Location = new System.Drawing.Point(3, 3);
+            this.rdButton4.Location = new System.Drawing.Point(2, 2);
+            this.rdButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton4.Name = "rdButton4";
-            this.rdButton4.Size = new System.Drawing.Size(181, 95);
+            this.rdButton4.Size = new System.Drawing.Size(120, 62);
             this.rdButton4.TabIndex = 20;
             this.rdButton4.Text = "saved and printed";
             this.rdButton4.TextColor = System.Drawing.Color.Black;
@@ -621,9 +637,10 @@
             this.rdButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton3.ForeColor = System.Drawing.Color.Black;
-            this.rdButton3.Location = new System.Drawing.Point(190, 3);
+            this.rdButton3.Location = new System.Drawing.Point(126, 2);
+            this.rdButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton3.Name = "rdButton3";
-            this.rdButton3.Size = new System.Drawing.Size(181, 95);
+            this.rdButton3.Size = new System.Drawing.Size(121, 62);
             this.rdButton3.TabIndex = 19;
             this.rdButton3.Text = "Clear Data";
             this.rdButton3.TextColor = System.Drawing.Color.Black;
@@ -641,11 +658,10 @@
             this.tableLayoutPanel4.Controls.Add(this.rdButton2, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(374, 68);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(249, 44);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // rdButton1
@@ -661,9 +677,10 @@
             this.rdButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton1.ForeColor = System.Drawing.Color.Black;
-            this.rdButton1.Location = new System.Drawing.Point(283, 3);
+            this.rdButton1.Location = new System.Drawing.Point(188, 2);
+            this.rdButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton1.Name = "rdButton1";
-            this.rdButton1.Size = new System.Drawing.Size(88, 62);
+            this.rdButton1.Size = new System.Drawing.Size(59, 40);
             this.rdButton1.TabIndex = 16;
             this.rdButton1.Text = "Logout";
             this.rdButton1.TextColor = System.Drawing.Color.Black;
@@ -683,9 +700,10 @@
             this.rdButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdButton2.ForeColor = System.Drawing.Color.Black;
-            this.rdButton2.Location = new System.Drawing.Point(190, 3);
+            this.rdButton2.Location = new System.Drawing.Point(126, 2);
+            this.rdButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdButton2.Name = "rdButton2";
-            this.rdButton2.Size = new System.Drawing.Size(87, 62);
+            this.rdButton2.Size = new System.Drawing.Size(58, 40);
             this.rdButton2.TabIndex = 17;
             this.rdButton2.Text = "Setting";
             this.rdButton2.TextColor = System.Drawing.Color.Black;
@@ -694,18 +712,20 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 715);
+            this.ClientSize = new System.Drawing.Size(533, 465);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Defect Record";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

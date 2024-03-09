@@ -14,12 +14,30 @@ namespace BarcodePrint
 
         private RdButton[] rdButtons; // Declare an array of RdButton
         public string InspectorName;
+        private TCPConnection tcpConnection;
+
 
         public Form1()
         {
-            InitializeComponent();  
+            InitializeComponent();
             CreateButtons();
 
+
+            // Create an instance of your TCP class
+            tcpConnection = new TCPConnection();
+
+            // Subscribe to the UpdateUIEvent and handle it with a new method
+            //tcpConnection.UpdateUIEvent += HandleUpdateUIEvent;
+
+            // Start the TCP server asynchronously
+            //_ = tcpConnection.StartServerAsync();
+            Load += Form1_Load;
+
+        }
+
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            await tcpConnection.StartServerAsync();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -38,6 +56,14 @@ namespace BarcodePrint
             frm2.Defect = textBoxDefect.Text;
             frm2.Inspec = textBoxInspec.Text;
             frm2.ShowDialog();
+        }
+        private void HandleUpdateUIEvent(string message)
+        {
+            // Update the UI with the received message
+            textBoxSerial.Invoke((MethodInvoker)(() =>
+            {
+                textBoxSerial.Text = message; // Assuming textBoxSerial is the TextBox control where you want to display the received message
+            }));
         }
 
         public Form1(string inspectorname) : this()
@@ -76,10 +102,6 @@ namespace BarcodePrint
 
         }
 
-        private void textBoxSerial_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void rdButton1_Click(object sender, EventArgs e)
         {
@@ -178,8 +200,14 @@ namespace BarcodePrint
                     uu.ShowDialog();
                 }
             }
-            catch (Exception)
-            { }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally 
+            {
+                formBackground.Dispose();
+            }
         }
 
         private void rdButton1_Click_1(object sender, EventArgs e)
@@ -310,5 +338,6 @@ namespace BarcodePrint
         {
 
         }
+
     }
 }
