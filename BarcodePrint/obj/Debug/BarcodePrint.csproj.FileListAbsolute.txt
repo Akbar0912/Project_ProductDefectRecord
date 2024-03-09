@@ -177,3 +177,5 @@ E:\displaySmartCamera\BarcodePrint\obj\Debug\BarcodeP.6B5C6A2C.Up2Date
 E:\displaySmartCamera\BarcodePrint\obj\Debug\BarcodePrint.exe
 E:\displaySmartCamera\BarcodePrint\obj\Debug\BarcodePrint.pdb
 E:\displaySmartCamera\BarcodePrint\obj\Debug\BarcodePrint.Form3.resources
+D:\Perkuliahan\Semester6\Panasonic\Printing\BarcodePrint\BarcodePrint\obj\Debug\BarcodePrint.Form3.resources
+D:\Perkuliahan\Semester6\Panasonic\Printing\BarcodePrint\BarcodePrint\obj\Debug\BarcodePrint.popUp.resources

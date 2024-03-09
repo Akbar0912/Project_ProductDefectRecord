@@ -217,6 +217,7 @@
             this.date.Size = new System.Drawing.Size(41, 20);
             this.date.TabIndex = 15;
             this.date.Text = "date";
+            this.date.Click += new System.EventHandler(this.date_Click);
             // 
             // pictureBox1
             // 

@@ -3,19 +3,21 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 using BarcodePrint.Component;
+using System.Configuration;
+using System.IO.Ports;
 
 namespace BarcodePrint
 {
     public partial class Form1 : Form
     {
-        private SqlConnection conn;
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["LSBUDBConnection"].ConnectionString);
+
         private RdButton[] rdButtons; // Declare an array of RdButton
         public string InspectorName;
 
         public Form1()
         {
-            InitializeComponent();
-            conn = new SqlConnection("Data Source=DESKTOP-7VDOR39\\SQLEXPRESS;Initial Catalog=LSBUDB;Integrated Security=True;TrustServerCertificate=True");
+            InitializeComponent();  
             CreateButtons();
 
         }
@@ -158,7 +160,7 @@ namespace BarcodePrint
             //MessageBox.Show($"Dynamic button {clickedButton.Name} is clicked");
 
             Form formBackground = new Form();
-            try 
+            try
             {
                 using (popUp uu = new popUp())
                 {
@@ -175,9 +177,138 @@ namespace BarcodePrint
                     uu.Owner = formBackground;
                     uu.ShowDialog();
                 }
-            } 
-            catch (Exception )
-            {}
+            }
+            catch (Exception)
+            { }
+        }
+
+        private void rdButton1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void rdButton4_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.Serial = textBoxSerial.Text;
+            frm2.Model = textBoxModel.Text;
+            frm2.Defect = textBoxDefect.Text;
+            frm2.Inspec = textBoxInspec.Text;
+            frm2.ShowDialog();
+
+            /*PrintDocument pd = new PrintDocument();
+
+            pd.PrintPage += printDocument1_PrintPage;
+
+            pd.PrintPage += (s, ev) => PrintInformation(ev);
+
+            PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+            printPreviewDialog.Document = pd;
+            printPreviewDialog.ShowDialog();*/
+
+            /*PrintDialog printDialog = new PrintDialog();
+            printDialog.Document = pd;
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                pd.Print();
+            }*/
+        }
+
+        public void textBoxSerial_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["LSBUDBConnection"].ConnectionString);
+            if (e.KeyChar == 13)
+            {
+                try
+                {
+                    conn.Open();
+
+                    string query = "SELECT @ModelNumber FROM global_model_code gmc JOIN defect_results dr ON gmc.ModelNumber = dr.ModelNumber WHERE dr.ModelNumber = '123';";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@ModelNumber", textBoxSerial.Text);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string model;
+
+                                model = reader["ModelNumber"].ToString();
+                               /* code = reader["code"].ToString();*/
+
+                                textBoxModel.Text = model;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Not Found");
+                            }
+                        }
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
+        public void BaseAButtonClick(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["LSBUDBConnection"].ConnectionString);
+            try
+            {
+                conn.Open();
+
+                string query = "SELECT gmc.ModelNumber FROM Global_Model_Code AS gmc JOIN Defect_Result AS dr ON gmc.ModelNumber= dr.SerialNumber WHERE dr.SerialNumber = '123'";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ModelNumber", textBoxSerial.Text);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string model;
+
+                            model = reader["ModelNumber"].ToString();
+                            /* code = reader["code"].ToString();*/
+
+                            textBoxModel.Text = model;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Not Found");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void rdButton3_Click(object sender, EventArgs e)
+        {
+            textBoxModel.Clear();
+            textBoxSerial.Clear();
+            textBoxDefect.Clear();
+        }
+
+        private void rdButton2_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+        }
+
+        private void textBoxSerial_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdButton14_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
