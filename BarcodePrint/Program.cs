@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BarcodePrint.Models;
+using BarcodePrint.Views;
+using BarcodePrint._Repositories;
+using BarcodePrint.Presenters;
+using System.Configuration;
 
 namespace BarcodePrint
 {
@@ -16,8 +21,10 @@ namespace BarcodePrint
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Login());
-            Application.Run(new Login());
+            string sqlConnectionString = ConfigurationManager.ConnectionStrings["LSBUDBConnection"].ConnectionString;
+            IMainView View = new MainView();
+            new MainPresenter(View, sqlConnectionString);
+            Application.Run((Form)View);
         }
     }
 }

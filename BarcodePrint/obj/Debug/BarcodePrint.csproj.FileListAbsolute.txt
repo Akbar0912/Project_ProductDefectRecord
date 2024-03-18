@@ -265,3 +265,5 @@ D:\code\ProductDefectRecord\BarcodePrint\obj\Debug\BarcodePrint.csproj.CoreCompi
 D:\code\ProductDefectRecord\BarcodePrint\obj\Debug\BarcodeP.6B5C6A2C.Up2Date
 D:\code\ProductDefectRecord\BarcodePrint\obj\Debug\BarcodePrint.exe
 D:\code\ProductDefectRecord\BarcodePrint\obj\Debug\BarcodePrint.pdb
+D:\Perkuliahan\Semester6\Panasonic\Printing\BarcodePrint\BarcodePrint\obj\Debug\BarcodePrint.Views.DefectView.resources
+D:\Perkuliahan\Semester6\Panasonic\Printing\BarcodePrint\BarcodePrint\obj\Debug\BarcodePrint.Views.MainView.resources
